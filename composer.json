@@ -1,10 +1,11 @@
 {
     "name": "galvao/gzf-muscles", 
+    "version": "0.1.0-dev",
     "description": "A complementary module for the original ZF2 Skeleton.", 
     "type": "zf-module",
     "license": "MIT",
     "keywords": ["zf2", "module", "CRUD", "DRY"],
-    "homepage": "https://github.com/galvao/gzf-core", 
+    "homepage": "https://github.com/galvao/gzf-muscles", 
     "authors": [
         {
             "name": "Er Galvão Abbott",
@@ -25,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "GZFMuscles\\": "src/gzf-muscles"
+            "GZFMuscles\\": "./src/"
         },
         "classmap": [
             "./Module.php"
