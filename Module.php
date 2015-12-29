@@ -9,7 +9,7 @@ use Zend\Db\TableGateway\TableGateway;
 class Module
 {
     public static $modelNamespace = '\Application\Model\\';
-    public static $entities = array();
+    public static $entities = [];
 
     public function getConfig()
     {
@@ -29,12 +29,12 @@ class Module
 
     public function setEntities(array $entities)
     {
-        $this->entities = $entities;
+        self::$entities = $entities;
     }
 
     public function getEntities()
     {
-        return $this->entities;
+        return self::$entities;
     }
 
     public function getEntity($entity)
