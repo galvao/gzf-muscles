@@ -3,7 +3,7 @@ namespace GZFMuscles\Model;
 
 class Model
 {
-    public function exchangeArray(array $data)
+    public function exchangeArray($data)
     {
         $attributes = array_keys($this->getArrayCopy());
 
